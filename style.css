@@ -1,6 +1,268 @@
+@charset "UTF-8";
 /*
  * Theme Name: hanhan's theme 
  * Author: Ryo Tomidokoro 
  * Description: This is my original theme.
  * Version: 1.0
  */
+
+
+
+body {
+  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+  background-color: #cccccc;
+  color: #444444;
+}
+
+/* #000099; #666699; #cccccc; */
+.post__title {
+  font-size: 33px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+    color:#000099;
+}
+
+a:hover {
+    color:#ff8800;
+}
+
+a img {
+    border : none;
+}
+
+article {
+    background-color: #ffffff;
+    width : 950px;
+    margin-left:auto;
+    margin-right: auto;
+    border : solid 1px #aaaaaa;
+    padding: 30px 30px 30px 30px;
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+    margin-bottom:15px;
+    -webkit-box-shadow: 1px 1px 3px #aaaaaa;
+    box-shadow: 1px 1px 3px #aaaaaa;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.postinfo {
+    font-size:smaller;
+    border-top:solid 1px #ccc;
+    border-bottom:solid 1px #ccc;
+    margin-top:14px;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom : 5px;
+}
+.postinfo time {
+    font-size:16px;
+    color: #ffffff;
+    background-color: #666699;
+    border-radius : 7px;
+    padding: 2px 20px 2px 20px
+}
+
+.aligncenter {
+    display :block;
+    margin-top : 30px;
+    margin-bottom : 30px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.alignright {
+    float:right;
+    margin-top:8px;
+    margin-bottom: 8px;
+    margin-right:20px;
+}
+
+.alignleft {
+    float:left;
+    margin-top:8px;
+    margin-bottom: 8px;
+    margin-right:20px;
+}
+
+.wp-caption-text {
+    text-align:center;
+    margin-top:3px;
+    color: #666666;
+}
+
+article img, .wp-cpation {
+    max-width: 100%;
+    height:auto;
+    box-shadow: 1px 1px 4px #000;
+    -moz-box-shadow: 1px 1px 4px #000;/* Firefox用 */  
+    -webkit-box-shadow: 1px 1px 4px #000;/* Safari,Google Chrome用 */  
+
+}
+
+/* #000099; #666699; #cccccc; */
+.navlink {
+    font-size: 14px;
+    border-top : solid 1px #cccccc;
+    margin-top : 50px;
+    margin-bottom: 40px;
+    clear : both;
+    overflow : hidden;
+
+}
+
+
+.navlink i {
+    font-size: 40px;
+    color : #666699;
+    vertical-align : middle;
+}
+
+.navlink a {
+    width: 50%;
+    text-decoration : none;
+    padding-top : 10px;
+    padding-bottom : 10px;
+}
+
+
+.navlink-prev a {
+    float : left;
+    text-align : left;
+}
+
+.navlink-next a {
+    float : right;
+    text-align : right;
+}
+
+.navlink a:hover {
+    color : #000000;
+}
+
+.navlink a:hover i {
+    color : #ff8800;
+}
+
+#respond {
+    background-color : #edede3;
+    padding: 20px;
+    margin-top : 20px;
+
+}
+
+#respond h3 { 
+    margin-top : 0;
+    margin-bottom : 0;
+}
+
+#respond .comment-notes,
+#respond .logged-in-as
+{
+    font-size : 12px;
+    margin-top : 10px;
+    margin-bottom : 25px;
+
+}
+
+#respond .form-allowed-tags{
+    font-size:12px;
+
+}
+
+
+#respond .required {color:red}
+
+#respond input,
+#respond textarea
+{
+    display : block;
+    background-color : #ffffff;
+    border : solid 1px #cccccc;
+    padding : 3px;
+    font-size : 16px;
+
+}
+
+
+#respond input { width : 500px }
+
+#respond textarea { width: 700px ; height:120px }
+
+#respond input[type="submit"]
+{
+    width:200px;
+    background-color: #ffaa00;
+    border : solid 1px #cccccc;
+    border-radius : 0;
+    padding-top : 10px;
+    padding-bottom:10px;
+
+}
+
+#comments {
+    background-color:#e4e4b9;
+    padding:20px;
+    padding-bottom:10px;
+}
+
+#comments h3 {
+    margin-top: 0;
+    margin-bottom:10px;
+}
+
+#comments ul {
+    list-style-type : none;
+    padding : 0;
+}
+
+#comments article {
+    width: auto;
+    background : none;
+    box-shadow : none;
+    border-radius : 0;
+    border : none;
+    padding : 0;
+    overflow : visible;
+    border-top : solid 1px #ffffff;
+    padding-top : 20px;
+
+}
+
+#comments a {
+    text-decoration : none;
+}
+
+.comment-meta {
+    font-size:12px;
+}
+
+.avatar {
+    float : left;
+    margin-right : 10px;
+}
+
+.comment-content{
+    font-size:14px;
+    overflow-wrap:break-word;
+    word-wrap : break-word;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.reply {
+    text-align:right;
+    font-size:12px;
+}
+
+.children {
+    margin-left:30px;
+}
