@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>ページタイトル</title>
-<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
-</head>
-<?php wp_head(); ?>
-<body>
-
+<?php get_header();?>
 
 <?php if(have_posts()) : 
   while(have_posts()): the_post(); ?>
@@ -42,8 +32,5 @@
 <?php endwhile; endif;?>
 
 
+<?php get_footer();?>
 
-<?php wp_footer(); ?>
-
-</body>
-</html>

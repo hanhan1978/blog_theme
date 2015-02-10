@@ -10,6 +10,7 @@
 
 body {
   font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+  /* background-color: #cccccc; */
   background-color: #cccccc;
   color: #444444;
 }
@@ -39,7 +40,7 @@ a img {
 
 article {
     background-color: #ffffff;
-    width : 950px;
+    width : 1000px;
     margin-left:auto;
     margin-right: auto;
     border : solid 1px #aaaaaa;
@@ -64,9 +65,9 @@ article {
     padding-bottom : 5px;
 }
 .postinfo time {
-    font-size:16px;
+    font-size:12px;
     color: #ffffff;
-    background-color: #666699;
+    background-color: #999;
     border-radius : 7px;
     padding: 2px 20px 2px 20px
 }
@@ -266,3 +267,168 @@ article img, .wp-cpation {
 .children {
     margin-left:30px;
 }
+
+.list {
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.list-title {
+  margin-bottom:10px;
+  font-size: 33px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list-title span {
+    font-weight:normal;
+    font-size:20px;
+    vertical-align:middle;
+}
+
+.list article {
+    margin-bottom : 20px;
+    padding: 0;
+}
+
+.list article a {
+    color: #000000;
+    text-decoration : none;
+    display : block;
+    overflow:hidden;
+    padding:20px;
+}
+
+.list article a:hover {
+    background-color: #ffe792;
+    color : #000000;
+    text-decoration: none;
+}
+
+
+.list article h1 {
+    font-size: 24px;
+}
+
+.list .postinfo {
+    border : none;
+    margin : 0;
+    padding: 0;
+}
+
+.list article img {
+    float : left;
+    margin-right : 20px;
+}
+
+body {margin : 0; padding: 0}
+
+header{
+    background-color: #18293E;
+    border-bottom:solid 1px #aaaaaa;
+    margin-bottom:10px;
+    padding: 8px;
+    zoom: 1;
+}
+
+header h1 {
+    font-size: 20px;
+    width: 1000px;
+    margin-left:auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right:auto;
+    padding: 0;
+
+}
+
+header a {
+    text-decoration:none;
+    color: #EEEEEE;
+}
+header a:hover {
+    color : #FFFFFF;
+}
+footer {
+    color: #ffffff;
+    background-color : #888;
+    margin-top:15px;
+    padding-top : 15px;
+    padding-bottom:15px;
+    clear:both;
+}
+
+#comments footer {
+    color: #000000;
+    background:none;
+    margin-top:0;
+    padding:0;
+}
+
+
+footer small {
+    display : block;
+    text-align:center;
+    clear:both;
+}
+footer a {
+    text-decoration:none;
+    color: #EEEEEE;
+}
+footer a:hover {
+    color : #000099;
+}
+.columns {
+    width: 1000px;
+    margin:auto;
+}
+
+.col {
+    width:300px;
+    float:left;
+    margin-right: 30px;
+}
+
+.col:nth-child(3n+3) { margin-right: 0}
+
+.col03 {margin-right:0; margin-top:14px}
+
+footer aside {margin-bottom : 30px}
+
+footer aside h1 {font-size: 18px; margin-bottom;10px}
+
+
+footer aside ul {
+    list-style-image: url(listmark.png);
+    padding-left:20px;
+}
+
+footer aside ul.children{
+    list-style-image: url(listmark-small.png);
+    margin-left : 0;
+    font-size : smaller;
+}
+
+footer aside a {
+    text-decoration : none;
+}
+
+footer .screen-reader-text{
+    display : block;
+    font-size : 18px;
+    font-weight : bold;
+    margin-bottom : 10px;
+}
+
+footer .search-field{
+    width:100%;
+    border:none;
+    padding:10px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+footer .search-submit {display:none}
+
