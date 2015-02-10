@@ -6,6 +6,8 @@
 <h1 class="list-title"><span>CATEGORY</span> <?=single_cat_title()?></h1>
 <?php elseif(is_tag()) : ?>
 <h1 class="list-title"><span>TAG</span> <?=single_tag_title()?></h1>
+<?php elseif(is_search()) : ?>
+<h1 class="list-title"><span>SEARCH RESULTS</span> <?=get_search_query()?></h1>
 <?php else : ?>
 <h1 class="list-title"><span>ARCHIVES</span></h1>
 <?php endif; ?>
