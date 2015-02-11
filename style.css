@@ -86,14 +86,14 @@ article {
 }
 
 .alignright {
-    float:right;
+    display :block;
     margin-top:8px;
     margin-bottom: 8px;
     margin-right:20px;
 }
 
 .alignleft {
-    float:left;
+    display :block;
     margin-top:8px;
     margin-bottom: 8px;
     margin-right:20px;
@@ -111,6 +111,7 @@ article img, .wp-cpation {
     box-shadow: 1px 1px 4px #000;
     -moz-box-shadow: 1px 1px 4px #000;/* Firefox用 */  
     -webkit-box-shadow: 1px 1px 4px #000;/* Safari,Google Chrome用 */  
+    float: none;
 
 }
 
