@@ -5,23 +5,32 @@
 
 <article <?php post_class(); ?>>
 
-<h1 class='post__title'><?php the_title(); ?></h1>
+<h1 class='post__title'><i class="fa fa-paw"></i><?php the_title(); ?></h1>
 
 <div class="postinfo">
 <time datetime="<?php echo get_the_date('c');?>">
 <?php echo get_the_date();?>
 </time>
+<?php if(has_category()) : ?>
+&nbsp;<span><i class="fa fa-folder-open"></i>
+<?= the_category(', '); ?>
+</span>
+<?php endif; ?>
+<?php the_tags('<span><i class="fa fa-tags"></i> ', ', ', '</span>'); ?>
+</div>
 </div>
 
+<div class="content">
 <?php the_content(); ?>
+</div>
 
 <div class="navlink">
 <span class="navlink-prev">
-<?php previous_post_link('%link ', '<i class="icon-chevron-sign-left"></i> %title'); ?>
+<?php previous_post_link('%link ', '<i class="fa fa-arrow-circle-left"></i> %title'); ?>
 </span>
 
 <span class="navlink-next">
-<?php next_post_link('%link', '%title <i class="icon-chevron-sign-right"></i>'); ?>
+<?php next_post_link('%link', '%title <i class="fa fa-arrow-circle-right"></i>'); ?>
 </span>
 </div>
 

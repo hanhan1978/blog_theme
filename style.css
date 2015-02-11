@@ -7,7 +7,6 @@
  */
 
 
-
 body {
   font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
   /* background-color: #cccccc; */
@@ -15,11 +14,14 @@ body {
   color: #444444;
 }
 
-/* #000099; #666699; #cccccc; */
 .post__title {
-  font-size: 33px;
+  font-size: 35px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.post__title i {
+  margin-right: 4px;
 }
 
 p {
@@ -51,16 +53,14 @@ article {
     margin-bottom:15px;
     -webkit-box-shadow: 1px 1px 3px #aaaaaa;
     box-shadow: 1px 1px 3px #aaaaaa;
-    border-radius:10px;
+    border-radius:5px;
     overflow:hidden;
 }
 
 .postinfo {
     font-size:smaller;
-    border-top:solid 1px #ccc;
-    border-bottom:solid 1px #ccc;
-    margin-top:14px;
-    margin-bottom: 30px;
+    margin-top:7px;
+    margin-bottom: 10px;
     padding-top: 5px;
     padding-bottom : 5px;
 }
@@ -68,8 +68,13 @@ article {
     font-size:12px;
     color: #ffffff;
     background-color: #999;
-    border-radius : 7px;
-    padding: 2px 20px 2px 20px
+    border-radius : 2px;
+    padding: 3px 6px 3px 6px
+}
+
+.postinfo p {
+    float:left;
+
 }
 
 .aligncenter {
@@ -146,7 +151,7 @@ article img, .wp-cpation {
 }
 
 .navlink a:hover {
-    color : #000000;
+    color : #ff8800;
 }
 
 .navlink a:hover i {
@@ -379,33 +384,32 @@ footer a {
 footer a:hover {
     color : #000099;
 }
+
 .columns {
     width: 1000px;
     margin:auto;
 }
 
 .col {
-    width:300px;
+    width:480px;
     float:left;
     margin-right: 30px;
 }
 
-.col:nth-child(3n+3) { margin-right: 0}
+.col:nth-child(2n+2) { margin-right: 0}
 
-.col03 {margin-right:0; margin-top:14px}
+.col03 {margin-right:0;}
 
 footer aside {margin-bottom : 30px}
 
-footer aside h1 {font-size: 18px; margin-bottom;10px}
-
+footer aside h1 {font-size: 24px; margin-bottom;10px}
 
 footer aside ul {
-    list-style-image: url(listmark.png);
-    padding-left:20px;
+    font-size: 20px;
+    margin-left:10px;
 }
 
 footer aside ul.children{
-    list-style-image: url(listmark-small.png);
     margin-left : 0;
     font-size : smaller;
 }
@@ -432,3 +436,124 @@ footer .search-field{
 
 footer .search-submit {display:none}
 
+/* ページャー */
+.pager{
+    margin-bottom: 20px;
+    text-align:center}
+ 
+a.page-numbers,
+.pager .current {
+    background-color: #edede3;
+    border: solid 1px #aaaaaa;
+    border-radius:5px;
+    padding:5px 8px;
+    margin:0 2px;
+    text-decoration: none;
+}
+ 
+.pager .current {
+    background-color: #4dadc1;
+    border: solid 1px #4dadc1;
+    color: #ffffff;
+}
+ 
+.pager a:hover {
+    color: #ffffff;
+    border: solid 1px #ff8800;
+    background-color: #ff8800;
+}
+
+.widget_profile div.left {
+    margin-left: 20px;
+    float: left;
+}
+.widget_profile div.right {
+    margin-left: 10px;
+    float: left;
+}
+.widget_profile img {
+    border-radius:5px;
+}
+.widget_profile p {
+    margin:0;
+    font-size: 18px; 
+    text-shadow: 1px 1px 3px #333; 
+}
+.widget_profile ul {
+    margin-top: 10px;
+    margin-left:5px;
+    font-size: 14px; 
+    padding: 0;
+    list-style: none;
+}
+.widget_profile li a{
+    font-size: 14px;
+}
+.widget_profile li {
+    font-size: 12px;
+    margin: 0;
+    display: inline-block;
+}
+
+.widget_small_archive a{
+    text-decoration: underline;
+}
+
+.widget_small_archive ul{
+    padding-left: 0px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.widget_small_archive .delimiter {
+    font-size: 14px;
+    color : #BBB;
+}
+
+.widget_small_archive li{
+    display: inline-block;
+}
+
+
+article .content h1 {
+    font-size: 30px; 
+    border-bottom: 2px solid #ccc;
+}
+article .content h2 {
+    font-size: 27px; 
+    border-bottom: 1px solid #ccc;
+}
+article .content h3 {
+    font-size: 24px; 
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+article .content h4 {
+    font-size: 21px; 
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+article .content h5 {
+    font-size: 18px; 
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+article .content ul {
+    margin-left: 0;
+    padding-left: 23px ;
+}
+
+article .content ol {
+    margin-left: 0;
+    padding-left: 27px ;
+}
+
+article .content blockquote {
+    border-left : solid 4px #ddd;
+    padding-left : 18px;
+    margin-left : 10px;
+}
+
+article .content blockquote p {
+}
