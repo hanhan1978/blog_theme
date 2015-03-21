@@ -1,0 +1,102 @@
+
+
+article {
+    width:auto;
+    margin:0 5px 0 5px;
+    margin-bottom: 0px;
+}
+
+
+.list {
+    width:auto;
+}
+
+
+header h1 {
+    width: auto;
+    text-align: center;
+}
+
+.columns {
+    width: auto;
+}
+
+.col {
+    width: auto;
+}
+
+#respond input {
+    width: auto;
+}
+
+#respond textarea { width: auto ; height: auto }
+
+#respond input[type="submit"]
+{
+    width:auto;
+}
+article .img-caption {
+    width: auto;
+    height: auto;
+    float: none;
+    margin-right:15px;
+    margin-bottom: 5px;
+}
+.list article img {
+    float:none;
+}
+
+article {
+    width: auto;
+    border:none;
+    box-shadow: none;
+    border-radius : 0;
+    margin-bottom: 0;
+    padding: 20px 10px;
+}
+header h1 { font-size:26px;}
+
+h1.post__title { font-size:22px;}
+.list article h1 {font-size:22px;}
+article .content h1 { font-size:22px;}
+article .content h2 { font-size:21px;}
+article .content h3 { font-size:19px;}
+article .content h4 { font-size:18px;}
+article .content h5 { font-size:17px;}
+
+article .content { font-size: 17px;}
+
+footer {
+    padding-left:15px;
+}
+
+.navlink i{
+    font-size:25px;
+    margin-top:-3px;
+    padding-left:5px;
+}
+
+.navlink {
+    font-size:18px;
+}
+.navlink span{
+    vertical-align:middle;
+}
+
+#respond h3 {
+    font-size:20px;
+}
+
+#respond .comment-notes{
+    font-size:14px;
+}
+
+.list-title {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.list .postinfo{
+    margin-bottom: -15px;
+}

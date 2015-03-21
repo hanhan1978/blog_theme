@@ -10,6 +10,9 @@ function my_scripts(){
     }
 }
 function my_length($length){
+    if(is_smartphone()){
+        return 50;
+    }
     return 200;
 }
 
@@ -17,6 +20,16 @@ function my_more($more) {
     return ' <a href="'. get_permalink( get_the_ID() ) . '">(続きを読む)</a>';
 }
 
+function is_smartphone(){
+    $ua = $_SERVER['HTTP_USER_AGENT'];
+    if ((preg_match('/Android/', $ua) && preg_match('/Mobile/', $ua))
+        || preg_match('/(iPhone|Windows Phone)/', $ua)
+    ) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
 add_action('wp_enqueue_scripts', 'my_scripts');

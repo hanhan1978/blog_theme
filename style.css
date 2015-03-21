@@ -115,6 +115,13 @@ article img, .wp-cpation {
 
 }
 
+article .img-caption {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right:15px;
+}
+
 /* #000099; #666699; #cccccc; */
 .navlink {
     font-size: 14px;

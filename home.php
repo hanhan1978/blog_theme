@@ -27,6 +27,7 @@
 </div>
 <?php the_excerpt(); ?>
 </a>
+
 </article>
 
 <?php endwhile; endif;?>
