@@ -8,12 +8,12 @@
 <a href="<?php the_permalink(); ?>">
 
 <?php if(has_post_thumbnail()) : ?>
-<div style='width:200px;height:150px;float:left;margin-right:15px;'>
+<div class="img-caption">
     <?php the_post_thumbnail(); ?>
 </div>
 <?php else : ?>
     <?php if(preg_match('/wp-image-(\d+)/', $post->post_content, $thum)) : ?>
-        <div style='width:200px;height:150px;float:left;margin-right:15px;'>
+        <div class="img-caption">
         <?php echo wp_get_attachment_image($thum[1]); ?>
         </div>
     <?php endif; ?>
@@ -27,7 +27,6 @@
 </div>
 <?php the_excerpt(); ?>
 </a>
-
 </article>
 
 <?php endwhile; endif;?>

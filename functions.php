@@ -113,7 +113,7 @@ class Small_Archive_Widget extends WP_Widget{
           $html .= "<ul>$year\n";
           asort($v);
           foreach($v as $month){
-              $html .="<li><a href='/$year/$month'>$month</a></li>\n";
+              $html .="<li><a href='". home_url() . "/$year/$month'>$month</a></li>\n";
               $html .="<span class='delimiter'>|</span>\n";
           }
           $html .= "</ul>\n";
