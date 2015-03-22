@@ -565,3 +565,14 @@ article .content blockquote {
 
 article .content blockquote p {
 }
+
+
+.socialbox .tweetbox{
+    width : 110px;
+    float : left;
+}
+
+.socialbox .fb-like{
+    float:left;
+    margin-top:-4px;
+}
